@@ -1,0 +1,19 @@
+{
+  "name": "PrivacyScreenBlur",
+  "version": "1.1.0",
+  "description": "a cordova project to secret information during screen switch",
+  "cordova": {
+    "id": "cordova.plugin.privacy.screen.blur",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "author": "Aditya Kumar",
+  "license": "ISC"
+}

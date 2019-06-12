@@ -37,7 +37,7 @@ public class PrivacyScreenBlur extends CordovaPlugin {
     @Override
     public void onPause(boolean multitasking) {
       Window window = this.cordova.getActivity().getWindow();
-      window.addFlags(WindowManager.LayoutParams.FLAG_SECURE);
+      window.setFlags(WindowManager.LayoutParams.FLAG_SECURE,WindowManager.LayoutParams.FLAG_SECURE);
       super.onPause(multitasking);
     }
   

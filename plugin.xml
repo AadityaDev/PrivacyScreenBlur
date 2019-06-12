@@ -1,2 +1,25 @@
 <?xml version='1.0' encoding='utf-8'?>
-<plugin id="cordova.plugin.privacy.screen.blur" version="1.1.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android"><name>PrivacyScreenBlur</name><js-module name="PrivacyScreenBlur" src="www/PrivacyScreenBlur.js"><clobbers target="cordova.plugins.PrivacyScreenBlur" /></js-module><platform name="android"><config-file parent="/*" target="res/xml/config.xml"><feature name="PrivacyScreenBlur"><param name="android-package" value="cordova.plugin.privacy.screen.blur.PrivacyScreenBlur" /></feature></config-file><config-file parent="/*" target="AndroidManifest.xml" /><source-file src="src/android/PrivacyScreenBlur.java" target-dir="src/cordova/plugin/privacy/screen/blur/PrivacyScreenBlur" /></platform><platform name="ios"><config-file parent="/*" target="config.xml"><feature name="PrivacyScreenBlur"><param name="ios-package" value="PrivacyScreenBlur" /></feature></config-file><source-file src="src/ios/PrivacyScreenBlur.m" /></platform></plugin>
+<plugin id="cordova.plugin.privacy.screen.blur" version="1.1.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>PrivacyScreenBlur</name>
+    <js-module name="PrivacyScreenBlur" src="www/PrivacyScreenBlur.js">
+        <clobbers target="cordova.plugins.PrivacyScreenBlur" />
+    </js-module>
+    <platform name="android">
+    <config-file parent="/*" target="res/xml/config.xml">
+        <feature name="PrivacyScreenBlur">
+            <param name="android-package" value="cordova.plugin.privacy.screen.blur.PrivacyScreenBlur" />
+            <param name="onload" value="true" />
+        </feature>
+    </config-file>
+    <config-file parent="/*" target="AndroidManifest.xml" />
+    <source-file src="src/android/PrivacyScreenBlur.java" target-dir="src/cordova/plugin/privacy/screen/blur" />
+    </platform>
+    <platform name="ios">
+        <config-file parent="/*" target="config.xml">
+            <feature name="PrivacyScreenBlur">
+                <param name="ios-package" value="PrivacyScreenBlur" />
+            </feature>
+        </config-file>
+        <source-file src="src/ios/PrivacyScreenBlur.m" />
+    </platform>
+</plugin>
